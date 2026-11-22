@@ -16,6 +16,9 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => {
+    res.json({ status: "ok", message: "Secure Notes API is running" });
+    });
 
 app.use("/api/v1", router);
 
